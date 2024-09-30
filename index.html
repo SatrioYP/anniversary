@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Wishes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">Happy Anniversary!</h1>
+        <p class="fade-in">Masukkan tanggal jadian kalian:</p>
+        <input type="date" id="annivDate" class="fade-in">
+        <button onclick="displayAnniversaryWish()" class="pulse">Lihat Ucapan</button>
+        <p id="result" class="fade-in"></p>
+        <p id="message" class="fade-in"></p>
+        <!-- Tombol untuk memulai video -->
+        <button onclick="playVideo()" class="pulse" id="playButton">Putar Video (Mengandung JJ)</button>
+        <!-- Elemen video -->
+        <div id="videoContainer" class="hidden">
+            <video id="anniversaryVideo" width="600" controls>
+                <source src="Anniv.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
